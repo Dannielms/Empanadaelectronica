@@ -33,7 +33,7 @@ body {
 .topnav input[type=text] {
     float: right;
     padding: 6px;
-    border: none;
+    border-color: none;
     margin-top: 8px;
     margin-right: 16px;
     font-size: 17px;
