@@ -1,0 +1,150 @@
+
+* {
+    box-sizing: border-box;
+    font-family: monospace, Helvetica, sans-serif;
+}
+
+body {
+/*font-family: "myFirstFont";*/
+    padding: 5px;
+    background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 30px;
+    text-align: center;
+    background:#ffffff;
+}
+
+.header h1 {
+    font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #ffffff;
+    border-top: solid 2px;
+    border-bottom: solid 2px;
+    border-color: #464646;
+}
+
+.topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border-color: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #4b371c;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/*
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: #aaa;
+    height: 100%;
+    overflow: hidden
+}
+
+.img_1{
+    width: 100%;
+}
+        
+.img_left {
+    float: left;
+    width: 60%;
+}
+
+.rating_right {
+    float: right;
+    width: 40%;
+    height: 100%;
+    padding: 5px;
+    background-color: #ffffff;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+.row .leftcolumn .card .fakeimg .rating_right ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.row .leftcolumn .card .fakeimg .rating_right ul li {
+    padding: 15px;
+}
+
+.row .leftcolumn .card .fakeimg .rating_right ul li .fas{
+    width: 25px;
+}
+
+.row .leftcolumn .card .fakeimg .rating_right i {
+    margin-right: 10px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+    float: none;
+    width: 100%;
+    }
+}
